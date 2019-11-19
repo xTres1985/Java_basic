@@ -40,5 +40,12 @@ public class MultiArray {
         // -> j = 0 | 0 < 5 -> true  | j++ 1 1 1
         //                                 2...
 
+        System.out.println(numbers[2][10]);
+//        System.out.println(numbers[2][10]); -> błąd ArrayIndexOutOfBoundExeption
+
+        String tab [] = new String[5];
+        int tabInt [] = new int[5];
+        System.out.println(tab[1]);     // typy obiektowe są inicjalizowane null
+        System.out.println(tabInt[1]);  //
     }
 }
