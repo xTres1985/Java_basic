@@ -31,7 +31,7 @@ public class Operators {
         System.out.println(age >= 18 ? "jesteś dorosły" : "nie jesteś dorosły");
         // inna metoda wyświetlenia wyniku
         String isMature = age >= 18 ? "jesteś dorosły" : "nie jesteś dorosły";
-        System.out.println("Twój wiek to: " + age + " " + isMature);
+        System.out.println("Twój wiek to:  " + age + " " + isMature);
         // inna metoda wyświetlenia wyniku
         System.out.printf("Twój wiek to: %d - %s\n", age, isMature);
 

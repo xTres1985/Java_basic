@@ -20,10 +20,11 @@ public class Introduction {
         // byte mySmallNumber = 55555555555; -> błąd, zbyt mała precyzja typu byte
         int myDasNumber = 75;
         System.out.println("number = " + myDasNumber);
-        System.out.println("dodawanie liczb:" + (100 + myDasNumber));
+        String tenSamTekst = "Wynik dodawania";
+        System.out.println(tenSamTekst + (100 + myDasNumber));
         double salaryNet = 9150.99;
         int vatTax = 23;
-        System.out.println("Kwota netto:" + salaryNet + "zł");
+        System.out.printf("Kwota netto: %.2f zł\n", salaryNet);
         System.out.println("Kwota brutto:" + (salaryNet * (1 + (vatTax/100.0))));
         // formatowanie wyjścia
         // \n -> newline
