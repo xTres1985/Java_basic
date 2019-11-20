@@ -14,10 +14,8 @@ public class Homework3 {
         Integer todayMonthNumber = Integer.valueOf(todayMonth);
         Integer todayDayNumber = Integer.valueOf(todayDay);
 
-        System.out.println(todayDayNumber);
-        System.out.println(todayMonth);
-        System.out.println(todayYear);
-        System.out.println("Wprowadz date: ");
+
+        System.out.println("Wprowadz datę urodzenia w formacie YYYY-MM-DD: ");
         String dateOfBirth = scanner.nextLine();
         String yearOfBirth = dateOfBirth.substring(0, 4);
         String monthOfBirth = dateOfBirth.toString().substring(5, 7);
@@ -25,22 +23,20 @@ public class Homework3 {
         Integer yearOfBirthNumber = Integer.valueOf(yearOfBirth);
         Integer monthOfBirthNumber = Integer.valueOf(monthOfBirth);
         Integer dayOfBirthNumber = Integer.valueOf(dayOfBirth);
-        
 
 
-        if (todayMonthNumber > monthOfBirthNumber) {
-            System.out.println(todayYearNumber - yearOfBirthNumber);
+        if (todayMonthNumber < monthOfBirthNumber) {
+            System.out.println(todayYearNumber - yearOfBirthNumber - 1);
         } else {
             if (todayMonthNumber == monthOfBirthNumber && todayDayNumber < dayOfBirthNumber) {
                 System.out.println(todayYearNumber - yearOfBirthNumber - 1);
             } else {
                 System.out.println(todayYearNumber - yearOfBirthNumber);
             }
-    }
+        }
     }
 }
 
-//        System.out.println("Twój wiek to:");
-//        System.out.println(todayYearNumber - yearOfBirthNumber);
+
 
 
