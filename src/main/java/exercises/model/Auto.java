@@ -27,13 +27,12 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Auto{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engine=" + engine +
-                ", fuel=" + fuel +
-                ", price=" + price +
-                '}';
+        return "Auto" +
+                " | " + brand +
+                " | " + model +
+                " | " + engine +
+                " | " + fuel +
+                " | " + price + " |";
     }
 
     public LocalDateTime getDateAdded() {

@@ -31,10 +31,10 @@ public class AutoController {
         }
     }
 
-    public Auto deleteAutoById(int id) {
-        if (id >= 1 && id < autos.size()) {
-            Auto deleteAuto = autos.remove(id - 1);
-            return deleteAuto;
+    public Auto deleteAutoById(int id){
+        if(id >= 1 && id <= autos.size()) {
+            Auto deletedAuto = autos.remove((id - 1));
+            return deletedAuto;
         }
         return null;
     }
